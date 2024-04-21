@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* Responsive css created by ESOLZ TECHNOLOGY */
+/*@media (min-width: 1200px) {}
+@media (min-width: 991px) {}
+@media (min-width: 768px) {}
+@media (max-width: 1199px) {}
+@media (max-width: 990px) {}
+@media (max-width: 767px) {}
+@media (max-width: 568px) {}
+@media (max-width: 420px) {}*/
+
+/****************************************************/
+@media (min-width: 1200px) {
+	
+}
+/****************************************************/
+@media (min-width: 991px) {
+	
+}
+/****************************************************/
+@media (min-width: 768px) {
+	
+}
+/****************************************************/
+@media (max-width: 1366px) {
+	.navigation>li>a {
+    padding: 6px 6px;
+    font-size: 14px;
+ 
+}
+}
+/****************************************************/
+@media (max-width: 1199px) {
+	
+}
+/****************************************************/
+@media (max-width: 990px) {
+	.navbar-brand{
+		width: 150px;
+		margin-right: 10px;
+		margin-top: 7px;
+	}
+	.navbar-brand img{
+		width: 100%;
+	}
+	.search_cell{
+		width: 220px;
+	}
+	.search_cell input{
+		background: rgba(0, 0, 0, 0) url("../images/btn_bg.png.html") repeat-x scroll 0 -5px;
+		font-size: 15px;
+   		height: 34px;
+	}
+	.select_inner{
+		height: 34px;
+		line-height: 34px;
+		font-size: 15px;
+	}
+	ul.share li a{
+		padding: 5px;
+	}
+	ul.share li a img{
+		width: 25px;
+	}
+	.share{
+		margin-right: 7px;
+	}
+	.select_cell{
+		width: 190px;
+	}
+	.select_cell .dropdown-menu li a{
+		font-size: 12px;
+		padding: 5px 9px 5px 50px;
+	}
+	.select_icon{
+		line-height: 27px;
+	}
+	.center_box_outr {
+	    width: 90%;
+	}
+	.btm_video {
+	    width: 100%;
+	}
+	.tab_part_left, .tab_part_right{
+		width: 50%;
+	}
+	.tab_part_right{
+		margin-left: 2%;
+		width: 48%;
+	}
+	.game_cell a{
+		width: 90px;
+	}
+	.game_cell a img{
+		width: 100%;
+	}
+	.comment_text {
+	    font-size: 12px;
+	    line-height: 15px;
+   	}
+   	.pagination > li > a, .pagination > li > span {
+	    font-size: 16px;
+	    padding: 3px 11px;
+    }
+    .play_inr span.like_text{
+    	font-size: 11px;
+    }
+    .tycoon_text{
+    	font-size: 15px;
+    }
+    .grn_btn a{
+    	font-size: 13px;
+    	padding: 5px 10px 3px 5px;
+    }
+    .nav-tabs > li > a{
+    	padding: 5px 10px 1px;
+    	font-size: 11px;
+    }
+    .grn_btn a img {
+	    margin-right: 1px;
+	}
+	.icon_panel {
+	    margin: 0 7px;
+	}
+	.left_aside, .right_aside{
+		display: none;
+	}
+	.center_header{
+		padding-left: 5px;
+	}
+	.tab_part_right h5{
+		font-size: 15px;
+		padding: 7px 0;
+	}
+	.top_add{
+		display: none !important;
+	}
+	.frm_outr input.kodu {
+	    width: 190px;
+	}
+	.side_text {
+	    font-size: 20px;
+	    margin-left: 19px;
+	}
+
+}
+/****************************************************/
+@media (max-width: 767px) {
+	.navbar-header{
+		margin-bottom: 7px;
+	}
+	.navbar-brand{
+		margin-top:2px;
+		float: none;
+		display: inline-block;
+	}	
+	.select_cell .dropdown-menu{
+		width: 100%;
+	}
+	.scroll_in{
+		max-height: 300px;
+		overflow-y: auto;
+		overflow-x: hidden;		
+	}
+	.image-outer{
+		padding-top: 100px; 
+	}
+	.footer{
+		padding: 1px 15px;
+	}
+	
+	.logo_text {
+		float:none;
+		display:block;
+		text-align:center;
+	    font-size: 31px;
+	    line-height: 38px;
+   	}
+   	.footer_right{
+   		float: none;
+   		display: block;
+   		text-align: center;
+   		margin-top: 0;
+   	}
+   	.footer{
+   		padding: 10px 15px;
+   	}
+   	.search_cell{
+   		width: 100%;
+   	}
+   	.head_left {
+	    float: none;
+	}
+	.select_cell{
+		width: 100%;
+	}
+	.share {
+	    margin-right: 7px;
+	    position: absolute;
+	    right: 7px;
+	    top: 5px;
+	}
+	ul.share li:first-child a {
+	    padding-left: 5px;
+	}
+	ul.share li:last-child a {
+	    padding-right: 5px;
+	}
+	.share{
+		width: 100px;
+	}
+	.select_inner{
+		box-shadow: none;
+		background:url(../images/nav_icon.png) no-repeat center #00385a;
+		background-size: 19px;
+		border-radius: 7px;
+		transition: none;
+		font-size: 0;
+	}
+	.select_cell.dropdown.open .select_inner{
+		background:url(../images/nav_icon.png) no-repeat center #00385a;
+		background-size: 19px;
+		border-radius: 7px 7px 0 0;
+		transition: none;
+	}
+	.select_cell .dropdown-menu{
+		margin: 0;
+		border-radius:0 0 7px 7px;
+		background: #00385a;
+		border:none;
+	}
+	.search_cell input{
+   		border:1px solid #002439;
+	}
+	.select_cell .dropdown-menu li a{
+		border-radius: 0;
+	}
+	.select_row {
+	    margin-bottom: 0;
+	}
+	.hover_text span{
+		font-size: 12px;
+	}
+	.select-area.clearfix {
+	    margin: 0 -15px;
+	}
+	.select_row.row{
+		margin: 0;
+	}
+	.select_row .col-sm-6, .select_row .col-sm-12{
+		padding: 0;
+	}
+	.select_cell .col-xs-6{
+		margin-bottom: 1px;
+	}
+	.view_mob{
+		display: block;
+	}
+	.center_box_outr {
+	    width: 100%;
+	}
+	.left_aside, .right_aside{
+		display: none;
+	}
+	.game_cell a {
+	    margin: 2px;
+	    width: 86px;
+	    float: none;
+	    display: inline-block;
+	}
+	.game_cell{
+		padding: 10px;
+		text-align: center;
+	}
+	.game_cell a {
+	    width: 71px;
+	}
+	.tycoon_text{
+		width: 100%;
+	}
+	.icon_panel a:first-child {
+	    border-left: none;
+	}
+	.grn_btn, .icon_panel{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	.grn_btn a{
+		display: inline-block;
+	}
+	.icon_panel a{
+		width: 33.3%;
+		text-align: center;
+		padding: 4px;
+	}
+	.rating_area{
+		padding: 0;
+		width: 100%;
+		margin: 5px 0;
+	}
+	.grn_btn, .rating_area{
+		margin-bottom: 7px;
+		text-align: center;
+	}
+	.tycoon_text{
+		text-align: center;
+	}
+	.rating_area a{
+		float: none;
+		display: inline-block;
+	}
+	.icon_panel{
+		border:1px solid #ccc;
+	}
+	.icon_panel a:last-child{
+		border:none;
+	}
+	.tab_part_left{
+		width: 100%;
+	}
+	.tab_part_right{
+		width: 100%;
+		margin: 10px 0 0 0;
+	}
+	
+}
+/****************************************************/
+@media (max-width: 568px) {
+	.header{
+		padding-bottom: 7px;
+	}
+	.navbar-header {
+	    text-align: left;
+	    margin-bottom: 7px;
+	}
+	.select_inner{
+		padding-left: 11px;
+	}
+	.select_cell .dropdown-menu{
+		padding: 8px 0;
+	}
+	.select_cell .col-xs-6{
+		width: 100%;
+		margin-bottom: 1px;
+	}
+	.icon_panel a:last-child{
+		width: 15%;
+	}
+	.icon_panel a {
+	    width: 42%;
+	}
+	.frm_outr input.kodu {
+	    width: 163px;
+	}
+	.frm_outr button {
+	    font-size: 14px;
+	    padding: 4px 11px;
+   	}
+}
+/****************************************************/
+@media (max-width: 420px) {
+	
+}
+/****************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

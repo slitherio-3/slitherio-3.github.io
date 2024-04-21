@@ -1,0 +1,473 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Agario Unblocked Game</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="content-language" content="en_US" />
+<meta name="language" content="en_US" />
+<meta name="google" content="notranslate">
+<link rel="canonical" href="agario.html" />
+<meta name="robots" content="index,follow" /> <meta property="og:image" content="files/image/agario.gif" />
+<meta property="image" content="files/image/agario.gif" />
+<link rel="image_src" href="files/image/agario.gif" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!--[if lt IE 9]>
+<script src="https://slitherio-3.github.io/assets/js/html5shiv.min.js"></script>
+<script src="https://slitherio-3.github.io/assets/js/respond.min.js"></script>
+<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="icon" href="assets/favicon.ico.html" type="image/x-icon">
+<script>
+function swf(e, a, t) {
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ a +'" height="'+ t +'" id="flash-content" align="middle" class="item-direct-container resizable">')
+    document.write('<param name="allowScriptAccess" value="never">')
+    document.write('<param name="movie" value="'+ e + '">')
+    document.write('<param name="quality" value="high">')
+    document.write('<param name="wmode" value="direct">')
+    document.write('<param name="allowfullscreen" value="false">')
+    document.write('<param name="allowfullscreeninteractive" value="false">')
+    document.write('<param name="fullScreenAspectRatio" value="">')
+    document.write('<param name="quality" value="">')
+    document.write('<param name="play" value="true">')
+    document.write('<param name="loop" value="true">')
+    document.write('<param name="menu" value="">')
+    document.write('<param name="hasPriority" value="true">')
+	document.write('<embed src="https://slitherio-3.github.io/'&#32;+&#32;e&#32;+'" class="item-direct-container resizable" width="' + a + '" height="' + t + '" id="gamefileEmbed" name="flash-content" align="middle" wmode="direct" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="never" haspriority="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer">')
+	document.write('</object>')
+}
+function dcr(e, a, t) {
+    document.write('<object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=7,0,2,0" width="' + a + '" height="' + t + '">'), document.write("<param name=\"swRemote\" value=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\">"), document.write('<param name="swStretchStyle" value="meet">'), document.write('<param name="bgColor" value="#000000">'), document.write('<param name="src" value="' + e + '">'), document.write('<embed src="https://slitherio-3.github.io/'&#32;+&#32;e&#32;+&#32;'" width="' + a + '" height="' + t + "\" bgColor=\"#000000\" swRemote=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\" swStretchStyle=\"meet\" type=\"application/x-director\" pluginspage=\"http://www.macromedia.com/shockwave/download/\"></embed>"), document.write("</object>")
+}
+function begen(b, a) {
+        jQuery.ajax({
+            type: "POST",
+            url: "https://slitherio-3.github.io/i/vote?begen=" + b + "&durum=" + a,
+            data: b,
+            success: function(c) {
+				if(c=="error"){
+					alert("Opps! Already voted.");
+					
+				} else {
+					$("#voteresults").html(c);
+				}
+            }
+        })
+}
+</script>
+<script type="application/ld+json">
+[
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"name" : "https://slitherio-3.github.io",
+		"url": "https://slitherio-3.github.io",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://slitherio-3.github.io/search/{search_term_string}",
+			"query-input": "required name=search_term_string"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name" : "https://slitherio-3.github.io",
+			"url": "https://slitherio-3.github.io",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://slitherio-3.github.io/assets/images/logo.png",
+				"width": 158,
+				"height": 53
+			}
+		}
+	}
+
+	,{
+		"@context": "http://schema.org",
+		"@type": "SoftwareApplication",
+		"dateCreated": "2021-01-11T16:33:39",
+		"datePublished": "2021-01-11T16:33:39",
+		"dateModified": "2021-01-11T16:33:39",
+		"url": "https://slitherio-3.github.io/agario.html",
+		"applicationCategory": "IO",
+		"operatingSystem": "Windows, OSX, Linux",
+		"name": "Agario",
+		"description": "<p>Popular game <strong>Agar.io</strong> is a best choice for multiplayer online action entertainment area who created by Brazilian game developer Matheus Valadares. In recent days that game has gained and the game seems a quite simple but not when you play it in fact.<br />
+<br />
+You should avoid any major cells for start and these will also share to swallow you. Then don&#39;t try to get into the radius of main large cells.<br />
+The bigger you get in Agar.io, the slower you move away. You can easily cross over with equal sized cells. If you are newbie in Agar.io, we have other useful tips for you, so you should hide behind or under the green objects with spikes. As long as you are smaller than these objects, nothing can happen to you. Hardly a larger cell will take the risk and shrink.</p>
+",
+	
+	
+	
+		"aggregateRating": {
+			"@type": "http://schema.org/AggregateRating",
+			"ratingValue": 4.93,
+			"ratingCount": 133,
+			"worstRating": 1,
+			"bestRating": 5
+		},
+		"offers": {
+			"@type": "http://schema.org/Offer",
+			"price": "0",
+			"priceCurrency": "usd",
+			"availability": "http://schema.org/InStock"
+		},
+		"screenshot": [
+			
+		]
+	},
+	{
+		"@context": "http://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+	
+	
+		
+		{
+			"@type": "http://schema.org/ListItem",
+			"position": 1,
+			"item": {
+				"@type": "http://schema.org/Thing",
+				"name": "IO",
+				"url": "https://slitherio-3.github.io/io"
+			}
+		},
+		
+		{
+			"@type": "http://schema.org/ListItem",
+			"position": 3,
+			"item": {
+				"@type": "http://schema.org/Thing",
+				"name": "Agario",
+				"url": "https://slitherio-3.github.io/agario.html",
+				"image": "files/image/agario.gif"
+			}
+		}]
+	}
+]
+</script>
+<script data-ad-client="ca-pub-4008255550209665" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155084875-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155084875-1');
+</script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container" style="position:relative;">
+            <div class="logo">
+                <a href="play/files/image/drakes-io-2.png.html" title="Huup Games"><img src="assets/images/logo.png" alt="Games"  /></a>
+            </div>
+            <div id="mainNav">
+                <ul class="headerMenu">
+                    <li>
+                        <a href="play/files/image/drakes-io-2.png.html" title="Games"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li><a href="io.html" title="IO">IO</a></li><li><a href="action.html" title="ACTION">ACTION</a></li><li><a href="car.html" title="CAR">CAR</a></li><li><a href="girls.html" title="GIRLS">GIRLS</a></li><li><a href="multiplayer.html" title="MULTIPLAYER">MULTIPLAYER</a></li><li><a href="puzzle.html" title="PUZZLE">PUZZLE</a></li><li><a href="racing.html" title="RACING">RACING</a></li><li><a href="shooting.html" title="SHOOTING">SHOOTING</a></li>                        <li>
+                            <a class="other-category" href="javascript:void(0);x">All Categories <i class="fas fa-caret-down"></i></a>
+                            <ul class="cat-dropdown">
+                                <li><a href="io.html" title="IO">IO</a></li><li><a href="2-player.html" title="2 PLAYER">2 PLAYER</a></li><li><a href="action.html" title="ACTION">ACTION</a></li><li><a href="adventure.html" title="ADVENTURE">ADVENTURE</a></li><li><a href="arcade.html" title="ARCADE">ARCADE</a></li><li><a href="animal.html" title="ANIMAL">ANIMAL</a></li><li><a href="bubble-shooter.html" title="BUBBLE SHOOTER">BUBBLE SHOOTER</a></li><li><a href="car.html" title="CAR">CAR</a></li><li><a href="card.html" title="CARD">CARD</a></li><li><a href="cooking-food.html" title="COOKING & FOOD">COOKING & FOOD</a></li><li><a href="girls.html" title="GIRLS">GIRLS</a></li><li><a href="fighting.html" title="FIGHTING">FIGHTING</a></li><li><a href="multiplayer.html" title="MULTIPLAYER">MULTIPLAYER</a></li><li><a href="puzzle.html" title="PUZZLE">PUZZLE</a></li><li><a href="racing.html" title="RACING">RACING</a></li><li><a href="shooting.html" title="SHOOTING">SHOOTING</a></li><li><a href="strategy.html" title="STRATEGY">STRATEGY</a></li><li><a href="sports.html" title="SPORTS">SPORTS</a></li>                            </ul>
+                        </li>
+                </ul>
+					<form action="play/files/image/drakes-io-2.png.html" method="GET" class="search-bar">
+						<input name="act" value="ara" type="hidden">
+						<input name="term" class="search-game" autocomplete="off" type="text" placeholder="Search">
+						 <button class="btn green"><i class="fa fa-search"></i></button>
+						 <ul class="game-results"></ul>
+					</form>
+            </div>
+        </div>
+    </header>
+    <div class="site-wrapper">
+<div class="game-info-page">
+    <div class="container outter">
+        <div class="row">
+			<div class="col-lg-10"> 
+			<div class="blue-box">
+			 <div class="box-title h-tag">
+                                <h1 itemprop="name">
+                                    Agario                                </h1>
+								<div class="buttons"> 
+									<a class="btn-left" href="https://slitherio-3.github.io/.html"><i class="fas fa-chevron-left"></i></a>
+									<a class="btn-right" href="zombiehunter-io.html"><i class="fas fa-chevron-right"></i></a>
+								</div>
+                            </div>
+							<div class="row"> 
+							
+							 <div class="col-lg-5">
+                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kare reklam -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4278159689669273"
+     data-ad-slot="3760097405"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8 col-sm-6 text-left">
+                            <article class="game-description custom-scroll">
+                                <p>Popular game <strong>Agar.io</strong> is a best choice for multiplayer online action entertainment area who created by Brazilian game developer Matheus Valadares. In recent days that game has gained and the game seems a quite simple but not when you play it in fact.<br />
+<br />
+You should avoid any major cells for start and these will also share to swallow you. Then don&#39;t try to get into the radius of main large cells.<br />
+The bigger you get in Agar.io, the slower you move away. You can easily cross over with equal sized cells. If you are newbie in Agar.io, we have other useful tips for you, so you should hide behind or under the green objects with spikes. As long as you are smaller than these objects, nothing can happen to you. Hardly a larger cell will take the risk and shrink.</p>
+								<a class="tag-item" href="https://slitherio-3.github.io/t/agar">agar</a><a class="tag-item" href="https://slitherio-3.github.io/t/agario-unblocked">agario unblocked</a><a class="tag-item" href="https://slitherio-3.github.io/t/agario-private-server">agario private server</a><a class="tag-item" href="https://slitherio-3.github.io/t/agar-io">agar.io</a>                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 p-0">
+                            <img class="info-image" src="files/image/agario.gif" alt="Agario"/>
+                            <a href="play/agario.html" title="Agario" class="btn-play">PLAY</a>										
+                        </div>
+                    </div>
+                </div>
+				</div>               
+            </div>
+			
+            <div class="blue-box mt-3"> 
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- yatay -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4278159689669273"
+     data-ad-slot="1552187725"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</div>
+     
+        <div class="mt-3 mb-5">
+            <div class="blue-box ">
+			 <div class="box-title h-tag">
+                                <h3>
+                                    Similar Games
+                                </h3>
+                            </div>
+                <ul id="list" class="game-cells">
+                    <li class="game-item">
+					<a href="zombieswithguns-io.html" title="ZombiesWithGuns.io" data-title="ZombiesWithGuns.io">					
+			    		<span class="hover_text"><span>ZombiesWithGuns.io</span></span>
+			           <img src="files/image/zombieswithguns-io.png" alt="ZombiesWithGuns.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="dominia-io.html" title="Dominia.io " data-title="Dominia.io ">					
+			    		<span class="hover_text"><span>Dominia.io </span></span>
+			           <img src="files/image/dominia-io.png" alt="Dominia.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="limax-io.html" title="Limax.io " data-title="Limax.io ">					
+			    		<span class="hover_text"><span>Limax.io </span></span>
+			           <img src="files/image/limax-io.png" alt="Limax.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="snok-io.html" title="Snok.io" data-title="Snok.io">					
+			    		<span class="hover_text"><span>Snok.io</span></span>
+			           <img src="files/image/snok-io.png" alt="Snok.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="balls-io.html" title="Balls.io " data-title="Balls.io ">					
+			    		<span class="hover_text"><span>Balls.io </span></span>
+			           <img src="files/image/balls-io.png" alt="Balls.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="superspin-io.html" title="SuperSpin.io " data-title="SuperSpin.io ">					
+			    		<span class="hover_text"><span>SuperSpin.io </span></span>
+			           <img src="files/image/superspin-io.jpg" alt="SuperSpin.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="cellz-io.html" title="Cellz.io " data-title="Cellz.io ">					
+			    		<span class="hover_text"><span>Cellz.io </span></span>
+			           <img src="files/image/cellz-io.png" alt="Cellz.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="alienate-io.html" title="Alienate.io" data-title="Alienate.io">					
+			    		<span class="hover_text"><span>Alienate.io</span></span>
+			           <img src="files/image/alienate-io.jpg" alt="Alienate.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="wormate-io.html" title="Wormate.io" data-title="Wormate.io">					
+			    		<span class="hover_text"><span>Wormate.io</span></span>
+			           <img src="files/image/wormate-io.jpg" alt="Wormate.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="yumy-io.html" title="Yumy.io " data-title="Yumy.io ">					
+			    		<span class="hover_text"><span>Yumy.io </span></span>
+			           <img src="files/image/yumy-io.jpg" alt="Yumy.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="sl4sh-io.html" title="Sl4sh.io" data-title="Sl4sh.io">					
+			    		<span class="hover_text"><span>Sl4sh.io</span></span>
+			           <img src="files/image/sl4sh-io.jpg" alt="Sl4sh.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="nullermand-io.html" title="Nullermand.io" data-title="Nullermand.io">					
+			    		<span class="hover_text"><span>Nullermand.io</span></span>
+			           <img src="files/image/nullermand-io.png" alt="Nullermand.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="pixelshooter-io.html" title="PixelShooter.io" data-title="PixelShooter.io">					
+			    		<span class="hover_text"><span>PixelShooter.io</span></span>
+			           <img src="files/image/pixelshooter-io.jpg" alt="PixelShooter.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="glor-io.html" title="Glor.io" data-title="Glor.io">					
+			    		<span class="hover_text"><span>Glor.io</span></span>
+			           <img src="files/image/glor-io.jpg" alt="Glor.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="robofight-io.html" title="RoboFight.io" data-title="RoboFight.io">					
+			    		<span class="hover_text"><span>RoboFight.io</span></span>
+			           <img src="files/image/robofight-io.png" alt="RoboFight.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="bombom-io.html" title="BomBom.io" data-title="BomBom.io">					
+			    		<span class="hover_text"><span>BomBom.io</span></span>
+			           <img src="files/image/bombom-io.png" alt="BomBom.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="crowdcity-io.html" title="Crowdcity.io " data-title="Crowdcity.io ">					
+			    		<span class="hover_text"><span>Crowdcity.io </span></span>
+			           <img src="files/image/crowdcity-io.png" alt="Crowdcity.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="drawthis-io.html" title="DrawThis.io " data-title="DrawThis.io ">					
+			    		<span class="hover_text"><span>DrawThis.io </span></span>
+			           <img src="files/image/drawthis-io.jpg" alt="DrawThis.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="gauch-io.html" title="Gauch.io" data-title="Gauch.io">					
+			    		<span class="hover_text"><span>Gauch.io</span></span>
+			           <img src="files/image/gauch-io.png" alt="Gauch.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="minesweeper-io.html" title="Minesweeper.io" data-title="Minesweeper.io">					
+			    		<span class="hover_text"><span>Minesweeper.io</span></span>
+			           <img src="files/image/minesweeper-io.jpg" alt="Minesweeper.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="woopdrift-io.html" title="Woopdrift.io" data-title="Woopdrift.io">					
+			    		<span class="hover_text"><span>Woopdrift.io</span></span>
+			           <img src="files/image/woopdrift-io.png" alt="Woopdrift.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="foes-io.html" title="Foes.io " data-title="Foes.io ">					
+			    		<span class="hover_text"><span>Foes.io </span></span>
+			           <img src="files/image/foes-io.jpg" alt="Foes.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="piaf-io.html" title="Piaf.io " data-title="Piaf.io ">					
+			    		<span class="hover_text"><span>Piaf.io </span></span>
+			           <img src="files/image/piaf-io.jpg" alt="Piaf.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="crazysteve-io.html" title="CrazySteve.io " data-title="CrazySteve.io ">					
+			    		<span class="hover_text"><span>CrazySteve.io </span></span>
+			           <img src="files/image/crazysteve-io.jpg" alt="CrazySteve.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="5mintokill-io.html" title="5MinToKill.io" data-title="5MinToKill.io">					
+			    		<span class="hover_text"><span>5MinToKill.io</span></span>
+			           <img src="files/image/5mintokill-io.jpg" alt="5MinToKill.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="driller-io.html" title="Driller.io" data-title="Driller.io">					
+			    		<span class="hover_text"><span>Driller.io</span></span>
+			           <img src="files/image/driller-io.jpg" alt="Driller.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="taaanks-io.html" title="Taaanks.io" data-title="Taaanks.io">					
+			    		<span class="hover_text"><span>Taaanks.io</span></span>
+			           <img src="files/image/taaanks-io.jpg" alt="Taaanks.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="supertanks-io.html" title="SuperTanks.io " data-title="SuperTanks.io ">					
+			    		<span class="hover_text"><span>SuperTanks.io </span></span>
+			           <img src="files/image/supertanks-io.png" alt="SuperTanks.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="botbattles-io.html" title="BotBattles.io" data-title="BotBattles.io">					
+			    		<span class="hover_text"><span>BotBattles.io</span></span>
+			           <img src="files/image/botbattles-io.jpg" alt="BotBattles.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="hexsweep-io.html" title="HexSweep.io" data-title="HexSweep.io">					
+			    		<span class="hover_text"><span>HexSweep.io</span></span>
+			           <img src="files/image/hexsweep-io.png" alt="HexSweep.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="paceman-io-2.html" title="Paceman.io " data-title="Paceman.io ">					
+			    		<span class="hover_text"><span>Paceman.io </span></span>
+			           <img src="files/image/paceman-io-2.jpg" alt="Paceman.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="carfight-io.html" title="Carfight.io" data-title="Carfight.io">					
+			    		<span class="hover_text"><span>Carfight.io</span></span>
+			           <img src="files/image/carfight-io.jpg" alt="Carfight.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="facepunch-io.html" title="Facepunch.io" data-title="Facepunch.io">					
+			    		<span class="hover_text"><span>Facepunch.io</span></span>
+			           <img src="files/image/facepunch-io.jpg" alt="Facepunch.io" />
+			        </a>					
+				</li><li class="game-item">
+					<a href="moomoo-io.html" title="MooMoo.io " data-title="MooMoo.io ">					
+			    		<span class="hover_text"><span>MooMoo.io </span></span>
+			           <img src="files/image/moomoo-io.jpg" alt="MooMoo.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="narwhale-io.html" title="Narwhale.io " data-title="Narwhale.io ">					
+			    		<span class="hover_text"><span>Narwhale.io </span></span>
+			           <img src="files/image/narwhale-io.png" alt="Narwhale.io " />
+			        </a>					
+				</li><li class="game-item">
+					<a href="tobattle-io.html" title="ToBattle.io" data-title="ToBattle.io">					
+			    		<span class="hover_text"><span>ToBattle.io</span></span>
+			           <img src="files/image/tobattle-io.png" alt="ToBattle.io" />
+			        </a>					
+				</li>                </ul>
+            </div>
+        </div>
+		</div>
+			<div class="col-lg-2"> 
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dikey -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4278159689669273"
+     data-ad-slot="5802879455"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</div>
+    </div>
+</div>
+</div> <footer class="footer"> 
+ <div class="footer_right"> 
+ <ul class="footer_list"> 
+		<li><a href="about-us.html" title="About Us">About Us</a></li>
+		<li><a href="privacy-policy.html" title="Privacy Policy">Privacy & Policy</a></li>
+		<li><a href="contact.html" title="Contact us">Contact Us</a></li>
+		<li><a href="sitemap.xml" title="sitemap">Sitemap</a></li>
+	</ul>
+ </div>
+ </footer>
+</body>
+</html>
